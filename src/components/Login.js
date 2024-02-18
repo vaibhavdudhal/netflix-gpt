@@ -22,8 +22,8 @@ const Login = () => {
         <input type="text" placeholder=" Email or Phone Number" className='w-full p-4 my-4 bg-[#333] text-[#8c8c8c]'/>
         <input className='w-full p-4 my-4 bg-buttonbg' placeholder=' Password' type='password' />
         <button className='pointer mt-4 bg-red-700 p-4 w-full rounded-lg text-white'>{ isSignINForm ? "Sign In" : "Sign Up"}</button>
-        
-       
+  
+
 
         <p className='py-4 text-color1 cursor-pointer' onClick={toggleForm}>
 
