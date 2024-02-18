@@ -23,11 +23,7 @@ const Login = () => {
         <input className='w-full p-4 my-4 bg-buttonbg' placeholder=' Password' type='password' />
         <button className='pointer mt-4 bg-red-700 p-4 w-full rounded-lg text-white'>{ isSignINForm ? "Sign In" : "Sign Up"}</button>
         
-        {/* <div className='flex justify-content bg-gray-600' >
-            <p className=''>Remember me</p>
-            <p className='ml-24 mr-0 font-#b3b3b3'> Need help?</p>
-
-        </div> */}
+       
 
         <p className='py-4 text-color1 cursor-pointer' onClick={toggleForm}>
 
