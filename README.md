@@ -1,11 +1,11 @@
 NetflixGPT🚀
 
-<<<<<<< HEAD
+
 #Features 
 -Login/Sign Up
-=======
+
 - Login/Sign Up
->>>>>>> 6b75d1e279d679f9949c46b5ac4b3740d030ce13
+
    - Sign In /Sign Up page
    - redirect to browse page
 -Homepage(after authentication)
