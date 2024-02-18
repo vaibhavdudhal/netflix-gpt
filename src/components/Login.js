@@ -29,7 +29,7 @@ const Login = () => {
 
             {
                 isSignINForm ? "New to Netflix? Sign up now."
-                 : "Already Registered? Sign in now."
+                 : "Already Registered? Login now."
             }
            
 
