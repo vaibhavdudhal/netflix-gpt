@@ -1,7 +1,7 @@
-#NetflixGPT
+NetflixGPT🚀
 
--Login/Sign Up
-   -Sign In /Sign Up page
+- Login/Sign Up
+   - Sign In /Sign Up page
    - redirect to browse page
 -Homepage(after authentication)
     -Header
