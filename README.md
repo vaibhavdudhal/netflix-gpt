@@ -18,3 +18,13 @@ NetflixGPT🚀
 -NetflixGPT
   -searchbar
   -Movie Suggestions
+
+-Redux 
+1.npm i -D @reduxjs/toolkit
+2.npm i react-redux
+2 library intsall
+
+Firebase 
+firebase login
+firebase init
+firebase deploy
