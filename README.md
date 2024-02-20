@@ -28,3 +28,7 @@ Firebase
 firebase login
 firebase init
 firebase deploy
+
+Bugs Fix
+-direct to browse without sign in 
+- browse to sign in without logout 

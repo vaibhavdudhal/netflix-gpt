@@ -1,11 +1,12 @@
 import React, { useState , useRef  } from 'react'
 import Header from './Header';
 import { checkValidData } from '../utils/validate';
-import {  createUserWithEmailAndPassword , signInWithEmailAndPassword , updateProfile} from "firebase/auth";
+import {  createUserWithEmailAndPassword , signInWithEmailAndPassword , updateProfile, validatePassword} from "firebase/auth";
 import { auth } from '../utils/firebase';
-import { useNavigate } from 'react-router-dom';
+
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
+import { BG } from '../utils/constants';
 
 const Login = () => {
 
@@ -15,7 +16,7 @@ const Login = () => {
     const name=useRef(null);
     const email=useRef(null);
     const password=useRef(null);
-    const navigate=useNavigate();
+    
     const dispatch=useDispatch();
 
 
@@ -40,13 +41,12 @@ const Login = () => {
         // Signed up 
          const user = userCredential.user;
         updateProfile(user , {
-            displayName: name.current.value, photoURL: "https://pbs.twimg.com/profile_images/1752200299144699904/umhiFxUI_400x400.jpg"
+            displayName: name.current.value 
           }).then(() => {
             // Profile updated!
             const {uid , email , displayName , photoURL} = auth.currentUser;
             dispatch(addUser({uid :uid , email:email , displayName : displayName , photoURL : photoURL}));
             
-            navigate("/browse")
           }).catch((error) => {
             seterrorMessage(error.message);
           });
@@ -69,8 +69,7 @@ const Login = () => {
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
-    console.log(user);
-    navigate("/browse");
+  
     // ...
   })
   .catch((error) => {
@@ -81,17 +80,7 @@ const Login = () => {
 
       }
     
-
-      
-    
-      
     }
-      
-
-   
-  
-
-   
 
   const toggleForm=()=>{
     setSignInForm(!isSignINForm);
@@ -102,7 +91,7 @@ const Login = () => {
     <div> 
         <Header/>
         <div className='absolute'>
-        <img src='https://assets.nflxext.com/ffe/siteui/vlv3/c0b69670-89a3-48ca-877f-45ba7a60c16f/2642e08e-4202-490e-8e93-aff04881ee8a/IN-en-20240212-popsignuptwoweeks-perspective_alpha_website_large.jpg' ></img>
+        <img src={BG} ></img>
 
         </div>
         <form onSubmit={(e)=>e.preventDefault()} className=' absolute p-12  my-36   bg-black w-3/12 mx-auto right-0 left-0 pb-24 bg-opacity-85'>
