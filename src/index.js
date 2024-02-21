@@ -4,8 +4,8 @@ import App from './App'; // Assuming your main App component is in a file named 
 import './index.css';
 
 createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+ // <React.StrictMode>
     <App />
-  </React.StrictMode>
+ // </React.StrictMode>
 );
 

@@ -32,3 +32,12 @@ firebase deploy
 Bugs Fix
 -direct to browse without sign in 
 - browse to sign in without logout 
+
+
+Browse
+-Main Conatiner 
+     -video bg
+     -video title
+=Seconadry Container 
+      -MovieList *n
+      - crads *n
