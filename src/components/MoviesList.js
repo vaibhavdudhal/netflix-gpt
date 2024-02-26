@@ -2,7 +2,7 @@ import React from 'react';
 import MovieCard from './MovieCard';
 
 const MoviesList = ({ title, movies }) => {
-  console.log(movies);
+ 
 
 
   if(!movies) return null;
